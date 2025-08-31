@@ -79,16 +79,16 @@ public class Main {
 
         //Task 7
         System.out.println("Задача 7");
-        byte purposeKg = 7;
-        int pursporeGramm = purposeKg * 1000;
+        byte allKg = 7;
+        int allGramm = allKg * 1000;
         short minGramm = 250;
         short maxGramm = 500;
-        int countDaysMinGramm = pursporeGramm / minGramm;
-        int countDaysMaxGramm = pursporeGramm / maxGramm;
-        int meanNumberDays = (countDaysMaxGramm + countDaysMinGramm) / 2;
-        System.out.println("Если скидывать по " + minGramm + " грамм в день, то потребуется " + countDaysMinGramm + " дней.");
-        System.out.println("Если скидывать по " + maxGramm + " грамм в день, то потребуется " + countDaysMaxGramm + " дней.");
-        System.out.println("В среднем потребуется " + meanNumberDays + " день.");
+        int countDays1 = allGramm / minGramm;
+        int countDays2 = allGramm / maxGramm;
+        int days = (countDays1 + countDays2) / 2;
+        System.out.println("Если скидывать по " + minGramm + " грамм в день, то потребуется " + countDays1 + " дней.");
+        System.out.println("Если скидывать по " + maxGramm + " грамм в день, то потребуется " + countDays2 + " дней.");
+        System.out.println("В среднем потребуется " + days + " день.");
         System.out.println();
 
         //Task 8

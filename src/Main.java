@@ -3,18 +3,18 @@ public class Main {
 
         //Task 1
         System.out.println("Задача 1");
-        int I = 33000;
-        System.out.println("Значение переменной I с типом int равно " + I);
-        byte B = -120;
-        System.out.println("Значение переменной B с типом byte равно " + B);
-        short S = 2025;
-        System.out.println("Значение переменной S с типом short равно " + S);
-        long L = 12345678910L;
-        System.out.println("Значение переменной L с типом long равно " + L);
-        float F = 2.1234567f;
-        System.out.println("Значение переменной F с типом float равно " + F);
-        double D = 1.123456789;
-        System.out.println("Значение переменной D с типом double равно " + D);
+        int i = 33000;
+        System.out.println("Значение переменной i с типом int равно " + i);
+        byte b = -120;
+        System.out.println("Значение переменной b с типом byte равно " + b);
+        short s = 2025;
+        System.out.println("Значение переменной s с типом short равно " + s);
+        long l = 12345678910L;
+        System.out.println("Значение переменной l с типом long равно " + l);
+        float f = 2.1234567f;
+        System.out.println("Значение переменной f с типом float равно " + f);
+        double d = 1.123456789;
+        System.out.println("Значение переменной d с типом double равно " + d);
         System.out.println();
 
         //Task 2
@@ -40,13 +40,15 @@ public class Main {
         System.out.println("Задача 4");
         byte bottle = 16;
         byte timeFixMin = 2;
-        int efficiency1 = bottle * (20 / timeFixMin);
+        int bottlePerMinute=bottle/timeFixMin;
+        int minutesPerDay=24*60;
+        int efficiency1 = 20*bottlePerMinute;
         System.out.println("За 20 минут машина произвела " + efficiency1 + " штук бутылок.");
-        int efficiency2 = bottle * ((24 * 60) / timeFixMin);
+        int efficiency2 = bottle * (minutesPerDay / timeFixMin);
         System.out.println("За сутки машина произвела " + efficiency2 + " штук бутылок.");
-        int efficiency3 = bottle * ((3 * 24 * 60) / timeFixMin);
+        int efficiency3 = bottle * ((3 * minutesPerDay) / timeFixMin);
         System.out.println("За 3 суток машина произвела " + efficiency3 + " штук бутылок.");
-        int efficiency4 = bottle * ((30 * 24 * 60) / timeFixMin);
+        int efficiency4 = bottle * ((30 * minutesPerDay) / timeFixMin);
         System.out.println("За месяц машина произвела " + efficiency4 + " штук бутылок.");
         System.out.println();
 
